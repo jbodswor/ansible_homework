@@ -1,4 +1,5 @@
-# Playbook to setup workstation and create osp network, router, SG and ssh keypair
+---
+# Playbook to provision instances on osp
 
 - hosts: localhost
   vars:
@@ -12,4 +13,4 @@
 - hosts: workstation
   become: yes
   roles:
-    - setup-workstation
+    - osp-instances
